@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script src="./script.js" defer></script>
+  <title>ACF Database</title>
+</head>
+<body>
+  <div class="supreme-container">
+    <div class="header">
+      <div class="top-title">ACF Database</div>
+    </div>
+    <div style="height: 15vh"></div>
+    <div class="main-container">
+      <form target="frame" id="query">
+        <div class="search-panel">
+          <input type="text" name="search" id="search" placeholder="Search for a phrase, a category, an answerline..." autofocus>
+          <button type="submit" id="search-submit">Search!</button>
+        </div>
+      </form>
+      <div class="results-container" style="display: none;">
+        <hr>
+        <div class="results-questions">
+          <div class="results-title">
+            <span>Question</span>
+            <a id="jump-to-answerline" href="#answerline">Jump to Answerline</a>
+          </div>
+          <div class="results-length" id="question-results-length"></div>
+          <div id="question-results"></div>
+        </div>
+        <div class="results-answers" id="answerline">
+          <div class="results-title">Answerline</div>
+          <div class="results-length" id="answer-results-length"></div>
+          <div id="answer-results"></div>
+        </div>
+      </div>
+    </div>
+    <div style="height: 10vh"></div>
+    <div class="footer">
+      <span>
+        Check out the Github project page and grab the full Fall and Regionals JSONs&nbsp;
+        <a target="_blank" href="https://github.com/mrbossosity/quizbowl-collections/raw/master/clean-acf-fall-2008-2019.json">here</a>
+        &nbsp;and&nbsp;
+        <a target="_blank" href="https://github.com/mrbossosity/quizbowl-collections/raw/master/clean-acf-regionals-2006-2019.json">here</a>.
+        &nbsp;All questions from Raynor Kuang's&nbsp;
+        <a href="https://quizdb.org">QuizDB</a>.
+      </span>  
+    </div>
+  </div>
+  <iframe src="" name="frame" style="display: none;"></iframe>
+</body>
+</html>
